@@ -40,6 +40,9 @@
 					</tr>
 				</table>
 			</td>
+			<td>
+				<?php print_r($pet);?>
+			</td>
 			<td valign="top">
 				<table>
 					<tr>
@@ -49,8 +52,8 @@
 						</thead>
 						<?php foreach($pet['Visit'] as $visit):?>
 						<tr>
-							<td>Hello<?php echo $visit['visit_date']; ?></td>
-							<td>Hello<?php echo $visit['description']; ?></td>
+							<td><?php echo $visit['visit_date']; ?></td>
+							<td><?php echo $visit['description']; ?></td>
 						</tr>
 						<?php endforeach; ?>
 					</tr>
