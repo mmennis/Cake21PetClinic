@@ -1,7 +1,7 @@
 <?php 
 
 class OwnersController extends AppController {
-	public $helpers = array('Html', 'Form');
+	public $helpers = array('Html', 'Form', 'Time');
 	
 	public function index() {
 		$this->set('owners', $this->Owner->find('all'));
