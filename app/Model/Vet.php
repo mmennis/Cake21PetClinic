@@ -2,6 +2,8 @@
 
 class Vet extends AppModel {
 	
+	public $recursive = 2;
+	
 	public $hasAndBelongsToMany = array(
 		'Specialty' => 
 			array(

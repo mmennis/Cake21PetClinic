@@ -20,8 +20,8 @@ class VetsController extends AppController {
  * @return void
  */
 	public function index() {
-		$this->Vet->recursive = 0;
-		$this->set('vets', $this->paginate());
+		$this->Vet->recursive = 2;
+		$this->set('vets', $this->Vet->find('all'));
 	}
 
 /**
