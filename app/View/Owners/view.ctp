@@ -32,7 +32,7 @@
 					</tr>
 					<tr>
 						<th>Birthdate</th>
-						<td><?php echo $this->Time->niceShort($pet['birth_date']); ?></td>
+						<td><?php echo $this->Time->nice($pet['birth_date'], null, '%a, %b %eS %Y'); ?></td>
 					</tr>
 					<tr>
 						<th>Type</th>
@@ -54,7 +54,7 @@
 						</thead>
 						<?php foreach($pet['Visit'] as $visit):?>
 						<tr>
-							<td><?php echo $this->Time->niceShort($visit['visit_date']); ?></td>
+							<td><?php echo $this->Time->nice($visit['visit_date'], null, '%a, %b %eS %Y'); ?></td>
 							<td><?php echo $visit['description']; ?></td>
 						</tr>
 						<?php endforeach; ?>
